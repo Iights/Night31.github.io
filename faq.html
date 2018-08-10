@@ -6,7 +6,8 @@
 	</title>
 	<style>
 	body{
-	text-align : center;
+	background-color : black;
+	color : white;
 	}
 	table{
 
@@ -22,5 +23,19 @@
 	</tr>
 	</table>
 	<h1>Welcome to <b>Tera Proxy</b></h1>
+	<p> 
+	<br><b>> Proxy is running, but my ingame ping is still high!</b></br>
+	This question is asked very often and by itself shows that you don't have the slightest clue of how the whole thing works, so let me clear it up! First of all, regarding the terminology: Tera-Proxy itself does nothing - it's just a framework for proxy modules, which you can find in #proxy-mods, for example. So what you're referring to is not proxy, but the skill-prediction (SP) module which comes preinstalled on my proxy. Older versions of SP faked the ping shown ingame to be close to zero. However, that was only a meaningless display and not reflecting the reality since neither proxy nor mods can lower your ping. That's physically impossible. The only way to accomplish that would be to improve the physical link inbetween your computer and the game servers. SP works by emulating the game server's responses for all kinds of skill-related stuff, which reduces the ping tax that you feel while playing. This is why skill-prediction does not alter your ping displayed ingame anymore. See <a href= "https://github.com/Mister-Kay/ping-compensation/#diagram">https://github.com/Mister-Kay/ping-compensation/#diagram."</a>
+	<br><b>> When starting proxy, I'm getting ERROR: Unable to auto-update the proxy! followed by an error message containing ETIMEDOUT, ECONNRESET, ECONNABORTED, something about certificates, or similar</b></br>
+	<br>This means that the proxy cannot update itself because it cannot reach GitHub's servers. Since GitHub is a very large website and should be accessible 24/7 from anywhere in the world, the error is very likely to be your internet connection. We can't really help you with that, so you're kind of on your own.</br>
+	<br>The ETIMEDOUT/ECONNRESET problems are typically experienced by users from south american countries, e.g. Brazil - I have no idea why, but it must be the fault of your ISP. Try resetting your router, maybe that helps.</br>
+	<br>If you get a certificate error like this: Error: self signed certificate in certificate chain and have Kaspersky Antivirus, turn the antivirus off completely. Also, consider using a different antivirus. Fuck Kaspersky.</br>
+	<br>Other certificate errors are usually caused by an improperly configured web proxy which tries to intercept SSL traffic. Those errors can also be caused by other intrusive virus scanners or viruses.</br>
+	<br><b>> I'm getting ERROR: Unable to auto-update module or ERROR: Unable to update the following def/map files followed by an error message containing ETIMEDOUT, ECONNRESET, ECONNABORTED, something about certificates, or similar</b></br>
+	<br>Similar error as above, but in this case there's something you can try: Set "updatelimit": true in [proxy folder]\bin\config.json (see Configuration section above). If that doesn't help, there's not much we can do. See the answer regarding errors during proxy self-update above.</br>
+	
+	
+	
+	</p>
 </body>
 </html>
