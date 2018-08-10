@@ -30,7 +30,7 @@
 	<br>This means that the proxy cannot update itself because it cannot reach GitHub's servers. Since GitHub is a very large website and should be accessible 24/7 from anywhere in the world, the error is very likely to be your internet connection. We can't really help you with that, so you're kind of on your own.
 	<br>The ETIMEDOUT/ECONNRESET problems are typically experienced by users from south american countries, e.g. Brazil - I have no idea why, but it must be the fault of your ISP. Try resetting your router, maybe that helps.
 	<br>If you get a certificate error like this: Error: self signed certificate in certificate chain and have Kaspersky Antivirus, turn the antivirus off completely. Also, consider using a different antivirus. Fuck Kaspersky.
-	<br>Other certificate errors are usually caused by an improperly configured web proxy which tries to intercept SSL traffic. Those errors can also be caused by other intrusive virus scanners or viruses.</br>
+	<br>Other certificate errors are usually caused by an improperly configured web proxy which tries to intercept SSL traffic. Those errors can also be caused by other intrusive virus scanners or viruses.
 	<br><b>> I'm getting ERROR: Unable to auto-update module or ERROR: Unable to update the following def/map files followed by an error message containing ETIMEDOUT, ECONNRESET, ECONNABORTED, something about certificates, or similar</b>
 	<br>Similar error as above, but in this case there's something you can try: Set "updatelimit": true in [proxy folder]\bin\config.json (see Configuration section above). If that doesn't help, there's not much we can do. See the answer regarding errors during proxy self-update above.
 	
