@@ -1,0 +1,31 @@
+.body2{
+	border-radius: 10px;
+    background: #99AAB5;
+    padding: 20px;
+    width: 70%; 
+	font-family : Sans-Serif;
+	background-color : black;
+	color: white;
+	margin : auto;
+}
+h1 , p{
+		text-align: center;
+		}
+#table2,td{
+		border: 1px solid white;
+		border-collapse: collapse;
+}
+#table2{
+	width :60%
+}
+table{
+	text-align : center;
+}
+	table, th , td{
+	}
+	#table3 {
+	width : 70%
+	}
+	.headerbar{
+	text-align : center;
+	}
