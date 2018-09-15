@@ -1,0 +1,43 @@
+.ggclass{
+	background-color : #D3D3D3;
+	padding : 20px;
+	width : 80%;
+	margin : auto;
+	border-radius : 10px;
+}
+h1{
+	text-align :center;
+}
+body{
+	background-color : #FFA07A;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+.headerbar{
+	position : fixed;
+	top : 0px;
+	left : 550px;
+	text-align : center;
+	margin : auto;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
