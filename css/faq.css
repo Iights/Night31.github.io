@@ -32,8 +32,8 @@ li {
 	
 }
 .headerbar{
-	left : 50%;
-	right : 50%;
+	display: flex;
+	justify-content: center;
 }
 li a {
     display: block;
