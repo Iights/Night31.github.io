@@ -24,6 +24,37 @@ table{
 #table3 {
 width : 70%	
 }
+.head{
+	position : absolute;
+	background-color : red;
+	width : 100%;
+	padding : 1px;
+	top : 0px;
+	
+}
 .headerbar{
-text-align : center;
+	display: flex;
+	justify-content: center;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
 }
